@@ -1,0 +1,21 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+const ChildComponent = (props) => {
+  return (
+    <div>
+      <p>{props.name}</p>
+      <p>{props.age}</p>
+      <p>{props.gender}</p>
+    </div>
+  );
+};
+
+const ParentComponent = () => {
+  return (
+    <div>
+      <ChildComponent name="John" age="30" gender="male" />
+      <ChildComponent name="Mary" age="25" geneder="female"/>
+    </div>
+  );
+};
